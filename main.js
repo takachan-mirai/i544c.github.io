@@ -39,7 +39,7 @@ $(function(){
 		y = $(window).scrollTop();
 		//$("#top").css('background-position', 'center ' + y/3);
 		h1.css('top', h/4-h1h - y/2.1);
-		if($('#main').height() >= y && flag){
+		if($('#main').height() == y && flag){
 			$("#main").css('overflow', 'scroll');
 			$("body").css('overflow', 'hidden');
 		}
