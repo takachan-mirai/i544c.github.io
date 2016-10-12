@@ -1,0 +1,65 @@
+#top {
+	width: 100%;
+	height: 100vh;
+	background-image: url(back.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+@media screen and (max-width:480px) {
+	#top {
+		background: none;
+	}
+
+	#top::before {
+		content: "";
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100vh;
+		background: url(back.jpg) center/cover no-repeat;
+		-webkit-background-size: cover;
+	}
+
+	#main {
+		background-color: #fff;
+	}
+}
+
+#top h1 {
+	position: fixed;
+	z-index: 0;
+	color: white;
+	left: 50%;
+}
+
+#main {
+	z-index: 1;
+	height: 91vh;
+	//overflow: scroll;
+	overflow: hidden;
+}
+
+.data {
+	padding-bottom: 30px;
+}
+
+.data:last-child {
+	padding-bottom: 100px;
+}
+
+h2:not(:first-child){
+	margin-top: 50px;
+}
+
+i.fa {
+	text-align: center;
+}
