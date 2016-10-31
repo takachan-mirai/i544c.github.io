@@ -41,6 +41,11 @@
   left: 50%;
 }
 
+#top img {
+  display: none;
+  position: fixed;
+}
+
 #main {
   z-index: 1;
   height: 91vh;
