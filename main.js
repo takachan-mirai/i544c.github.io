@@ -43,4 +43,14 @@ $(function(){
       $("body").css('overflow', 'hidden');
     }
   }
+
+
+  //github-chart
+  var img = $("#github-chart-img");
+  img.load(function() {
+    if(img.width() > $(window).width()) {
+      $("#github-chart").scrollLeft(img.width());
+    }
+  });
+  img.attr('src', img.attr('src'));
 });

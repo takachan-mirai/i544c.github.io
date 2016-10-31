@@ -60,6 +60,11 @@ h2:not(:first-child){
   margin-top: 50px;
 }
 
+#github-chart {
+  width: 100%;
+  overflow-x: scroll;
+}
+
 i.fa {
   text-align: center;
 }
