@@ -68,3 +68,7 @@ h2:not(:first-child){
 i.fa {
   text-align: center;
 }
+
+.row .fa {
+  margin-bottom: 20px;
+}
