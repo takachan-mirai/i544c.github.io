@@ -44,6 +44,7 @@
 #top img {
   display: none;
   position: fixed;
+  margin-top: 5px;
 }
 
 #main {
