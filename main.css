@@ -11,6 +11,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  z-index: 1;
+}
+
+
+@media screen and (max-width:480px) {
+  #top {
+    background-size: auto;
+  }
 }
 
 #top h1 {
@@ -23,7 +31,7 @@
 
 #main {
   margin-top: 100vh;
-  background-color: white;
+  background: white;
 }
 
 .data {
