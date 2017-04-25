@@ -3,9 +3,9 @@
  */
 
 $(function(){
-  window.addEventListener("scroll", (() => {
-    let top_min_height = document.querySelector("#top h1").clientHeight;
-    return () => {
+  window.addEventListener("scroll", (function(){
+    var top_min_height = document.querySelector("#top h1").clientHeight;
+    return function(){
       document.getElementById("top").style.height = Math.max(window.innerHeight - window.pageYOffset, top_min_height);
     };
   })());
